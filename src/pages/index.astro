@@ -1,15 +1,13 @@
 ---
-
+import MainLayout from "../layout/mainLayout.astro";
+import Carrusel from "../components/carrusel/Carrusel";
+import Promo from "../components/promo/Promo";
+import Flayer from "../components/flayer/Flayer";
+import NavBar from '../components/navbar/NavBar';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Inicio" icon="logo.png">
+    <Promo client:load/>
+    <NavBar client:load/>
+    <Carrusel client:load />
+    <Flayer client:load/>
+</MainLayout>

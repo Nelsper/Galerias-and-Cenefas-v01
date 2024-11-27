@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from "react";
 import "./css/carrusel.css";
 import useEmblaCarousel from "embla-carousel-react";
-import slides from "../../data";
+import slides from "../../data/dataCarrousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleChevronUp,
@@ -30,8 +30,6 @@ const Carrusel = () => {
 
   return (
     <>
-      <h1>Your Welcome!</h1>
-      <h1>Carrusel Vertical</h1>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
